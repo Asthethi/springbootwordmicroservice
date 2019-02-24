@@ -13,6 +13,10 @@ import com.springbootmicroservice.api.exceptions.WordServiceBadRequestException;
 import com.springbootmicroservice.api.mappers.WordMapper;
 import com.springbootmicroservice.api.model.Word;
 
+/**
+ * @author AST
+ * Class Interacts with Database
+ */
 @Repository
 public class WordDaoImpl implements WordDao {
 
