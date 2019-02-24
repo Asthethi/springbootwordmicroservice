@@ -11,4 +11,6 @@ public interface WordService {
 
 	Word storeWord(Word word) throws WordServiceBadRequestException;
 
+	List<Word> getWord(int id);
+
 }

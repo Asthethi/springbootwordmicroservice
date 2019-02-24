@@ -11,4 +11,6 @@ public interface WordDao {
 
 	Word saveWordObj(Word word) throws WordServiceBadRequestException;
 
+	List<Word> getWordById(int id);
+
 }

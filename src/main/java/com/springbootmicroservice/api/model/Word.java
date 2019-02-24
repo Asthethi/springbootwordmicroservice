@@ -4,24 +4,23 @@ public class Word {
 
 	private String word;
 	private String meaning;
+	private int id;
 	
+	public Word() {}
 	
-
-
 	@Override
 	public String toString() {
-		return "Word [word=" + word + ", meaning=" + meaning + "]";
+		return "Word [word=" + word + ", meaning=" + meaning + ", id=" + id + "]";
 	}
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + id;
 		result = prime * result + ((meaning == null) ? 0 : meaning.hashCode());
 		result = prime * result + ((word == null) ? 0 : word.hashCode());
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -31,6 +30,8 @@ public class Word {
 		if (getClass() != obj.getClass())
 			return false;
 		Word other = (Word) obj;
+		if (id != other.id)
+			return false;
 		if (meaning == null) {
 			if (other.meaning != null)
 				return false;
@@ -43,24 +44,23 @@ public class Word {
 			return false;
 		return true;
 	}
-
-	public Word() {
-	}
-
 	public String getWord() {
 		return word;
 	}
-
 	public void setWord(String word) {
 		this.word = word;
 	}
-
 	public String getMeaning() {
 		return meaning;
 	}
-
 	public void setMeaning(String meaning) {
 		this.meaning = meaning;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	

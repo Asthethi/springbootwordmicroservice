@@ -6,7 +6,6 @@ public class WordServiceBadRequestException extends Exception {
 
 	public WordServiceBadRequestException(String message) {
 		super(message);
-		// TODO Auto-generated constructor stub
 	}
 
 }

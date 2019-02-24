@@ -43,4 +43,11 @@ public class WordDaoImpl implements WordDao {
 		return word;
 	}
 
+	@Override
+	public List<Word> getWordById(int id) {
+		
+		List<Word> wordById = jdbcTemplate.query("SELECT * FROM WORDS WHERE ID = "+id, new WordMapper());
+		return wordById;
+	}
+
 }

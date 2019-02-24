@@ -29,4 +29,10 @@ public class WordServiceImpl implements WordService {
 		return savedWord;
 	}
 
+	@Override
+	public List<Word> getWord(int id) {
+		// TODO Auto-generated method stub
+		return wordDao.getWordById(id);
+	}
+
 }
