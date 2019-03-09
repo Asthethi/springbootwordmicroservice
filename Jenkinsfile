@@ -4,4 +4,8 @@ node{
                     deleteDir()
                     echo 'Cleaning Workspace SUCCESS'
           }
+          
+          stage('Maven Build'){
+          	sh 'mvn clean install'
+          }
 }
