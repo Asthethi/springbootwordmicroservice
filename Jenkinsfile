@@ -6,6 +6,6 @@ node{
           }
           
           stage('Maven Build'){
-          	sh 'mvn clean install'
+          	sh label: '', script: 'mvn clean install'
           }
 }
