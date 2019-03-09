@@ -1,5 +1,4 @@
-pipeline{
-	agent any
+node{
 	
     stages{
         stage('Clean Workspace'){
@@ -11,5 +10,4 @@ pipeline{
         
         }
     }
-
 }
