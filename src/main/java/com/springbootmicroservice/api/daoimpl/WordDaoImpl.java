@@ -19,6 +19,7 @@ import com.springbootmicroservice.api.model.Word;
 @Repository
 public class WordDaoImpl implements WordDao {
 
+	
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
