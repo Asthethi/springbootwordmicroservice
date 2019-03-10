@@ -7,6 +7,6 @@ node{
           
           stage('Maven Build'){
           def mavenCmd = tool name: 'Maven', type: 'maven'
-          	sh "${mavenCmd}/bin/mvn clean install"
+          	sh "mvn clean install"
           }
 }
